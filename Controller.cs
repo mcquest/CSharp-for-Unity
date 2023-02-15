@@ -11,7 +11,7 @@ public class Controller : MonoBehaviour
   // Initialize Rigidbody variable 
     Rigidbody rb1;
 
-    public GameManager exampleName;
+
 
     // Start is called before the first frame update
     void Start()
