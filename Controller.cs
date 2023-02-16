@@ -10,6 +10,8 @@ public class Controller : MonoBehaviour
     string greeting;
   // Initialize Rigidbody variable 
     Rigidbody rb1;
+    
+    int jumps = 0;
 
 
 
@@ -42,7 +44,7 @@ public class Controller : MonoBehaviour
         {
             //Debug.Log("left");
             // Move left
-            this.transform.Translate(Vector3.left * Time.deltaTime);
+            this.transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.D))
@@ -58,12 +60,13 @@ public class Controller : MonoBehaviour
 
         if (Input.GetKey(KeyCode.S))
         {
-          transform.Translate(Vector3.back);
+          transform.Translate(Vector3.back * speed * Time.deltaTime);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) & jumps < 2)
         {
             rb1.AddForce(Vector3.up * jump, ForceMode.Impulse);
+            jumps = jumps + 1;
         }
 
     }
@@ -82,6 +85,7 @@ public class Controller : MonoBehaviour
       if (o.tag == "Finish")
       {
         Debug.Log("works!");
+        jumps = 0;
       }
     }
 
