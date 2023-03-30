@@ -13,7 +13,7 @@ public class CarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = this.GetComponent<Rigidbody>();
+        //rb = this.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -48,13 +48,13 @@ public class CarController : MonoBehaviour
             
 
         }
-
+        /*
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //transform.Translate(Vector3.up*jump*Time.deltaTime);
              rb.AddForce(Vector3.up * jump, ForceMode.Impulse);
             
         }
-        
+        */
     }
 }
