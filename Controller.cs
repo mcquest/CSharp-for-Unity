@@ -1,4 +1,4 @@
-// For core movement, copy line 44-66 and add to Update function
+// For core movement, copy line 9 & 44-66 and add to Update function
 
 using System.Collections;
 using System.Collections.Generic;
