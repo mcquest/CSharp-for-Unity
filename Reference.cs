@@ -41,7 +41,7 @@ public class Reference : MonoBehaviour
 
     
 
-
+    // Start event function/method executes once at the beginning of the scene
     void Start()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -62,6 +62,7 @@ public class Reference : MonoBehaviour
 
     }
 
+    // Update happens once per frame approx 30-60 times/sec
     void Update()
     {
 
