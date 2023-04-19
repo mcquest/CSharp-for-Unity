@@ -44,6 +44,9 @@ public class Reference : MonoBehaviour
     // Start event function/method executes once at the beginning of the scene
     void Start()
     {
+    
+        Debug.Log("Hello World");
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Application.Quit();
