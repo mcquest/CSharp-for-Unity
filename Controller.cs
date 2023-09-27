@@ -80,10 +80,12 @@ public class Controller : MonoBehaviour
     }
 
     
-
+    // Called on collisions with colliders
     void OnCollisionEnter(Collision collisionFromEvent)
-    {
+    {    
+       // Variable game object from collision
       GameObject o = collisionFromEvent.gameObject;
+      // Check object tag
       if (o.tag == "Finish")
       {
         Debug.Log("works!");
